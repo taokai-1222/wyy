@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			*{margin:0;padding:0;}
+			#d1{background:#232323;}
+			.header_bg{
+				width:1200px;margin:0 auto;
+				font-size:14px;
+			}
+			.header_bg ul.header{
+				width:1200px;height:70px;
+				list-style-type:none;
+			}
+			.header_bg ul.header li{
+				line-height:70px;
+				text-decoration:none;color:#aaa;
+				float:left;
+			}
+			div.header_bg ul.header li.header_top{
+				width:200px;height:70px;
+				background:url("img/topbar.png") no-repeat 10px 0px;
+			}
+			div.header_bg ul.header li a{
+				text-decoration:none;color:#aaa;
+				padding-left:15px;padding-right:15px;
+			}
+			.header_first{
+				background-color:#000;color:#fff;
+			}
+			.my_music:hover{
+				background-color:#000;color:#fff;
+			}
+			.input_top{
+				height:26px;
+				border-radius:1rem;
+				padding-left:25px;
+				background:#fff url("img/topbar.png") no-repeat -2px -102px;
+				margin-left:50px;
+			}
+			.video{margin-left:20px;margin-right:5px;}
+			.video a{
+				width:100px;
+				border:1px solid #aaa;
+				border-radius:1rem;
+				padding:6px;
+			}
+			.video a:hover{border-color:#fff;color:#fff;}
+			.header_bg ul.header li p{
+				width:30px;height:30px;
+				background: url("img/topbar.png") no-repeat -190px 18px;
+			}
+			.login{position:relative;}
+			.login a{
+				padding-right:15px;position:relative;
+			}
+			.header_bg ul.header li.login a span{
+				position:absolute;
+				width:20px;height:20px;
+				background:url("img/topbar.png") no-repeat -224px -55px;
+				top:0px;
+			}
+			.wx_login{
+				position:absolute;top:60px;right:-50px;
+				list-style:none;
+			}
+			.wx_login li{
+				clear:both;width:180px; height:35px;
+				background:#2a2a2a;
+				position:relative;
+				border-bottom:1px solid #000;
+			}
+			.wx_login li a{
+				position:absolute;top:-17px;left:5px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="d1">
+		<div class="header_bg">
+			<ul class="header">
+				<li class="header_top"><div></div>
+				</li>
+				<li class="header_first"><a href="#">发现音乐</a></li>
+				<li class="my_music"><a href="#">我的音乐</a></li>
+				<li class="my_music"><a href="#">朋友</a></li>
+				<li class="my_music"><a href="#">商城</a></li>
+				<li class="my_music"><a href="#">音乐人</a></li>
+				<li class="my_music"><a href="#">下载客户端</a></li>
+				<li><p></p></li>
+				<li>
+					<input class="input_top" type="text" placeholder="音乐/电台/用户">
+				</li>
+				<li class="video"><a href="#">创作者中心</a></li>
+				<li class="login">
+					<a href="#">登录<span></span></a>
+					<ul class="wx_login">
+						<li>
+							<a href="#">手机登录</a>
+						</li> 
+						<li>
+							<a href="#">微信登录</a>
+						</li> 
+						<li>
+							<a href="#">QQ登录</a>
+						</li> 
+						<li>
+							<a href="#">新浪微博登录</a>
+						</li> 
+						<li>
+							<a href="#">网易邮箱账号登录</a>
+						</li> 
+					</ul>
+ 				</li>
+			</ul>
+		</div>
+	</div>
+				
+	</body>
+</html>
