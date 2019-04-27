@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        /* 页脚左侧样式 */
+        #footer{background:rgb(242,242,242);}
+        .my_footer{
+            width:992px;height:100px;
+            margin:0 auto;
+            font-size:12px;
+						
+        }
+				.footer_left{position:relative;}
+        .serve{width:600px;height:40px;}
+        .serve ul{list-style:none;padding-top:15px;}
+        .serve ul li{
+            float:left;color:#999;
+        }
+        .nav-item+.nav-item::before{
+            content:"|";
+            padding-left:0.5rem;
+            padding-right:0.5rem;
+        }
+        .copyright,.tip_phone{
+            height:30px;color:#666;
+               
+        }
+        .copyright p a,.tip_phone p a{
+            text-decoration:none;
+            color:#666;line-height:30px;
+        }
+        .serve ul li:hover,.copyright p a:hover,.tip_phone p a:hover{
+            text-decoration:underline;
+        }
+				
+        /* 页脚右侧样式 */
+        .footer_right{
+            width:400px;height:100px;
+            position:absolute;
+            top:0px; left:600px;
+						
+        }
+        .footer_right>ul{
+            height:100px;
+            list-style:none;    
+        }
+        .footer_right ul li{
+            width:80px;height:100px;
+            float:left;
+        }
+        .footer_right ul li p{
+            width:80px;height:80px;
+        }
+        .footer_right ul li .p1{
+            background:url("../img/foot_enter_new2.png") no-repeat -93px -145px;
+        }
+				.footer_right ul li .p2{
+            background:url("../img/foot_enter_new2.png") no-repeat -1px -68px;
+        }
+				.footer_right ul li .p3{
+            background:url("../img/foot_enter_new2.png") no-repeat -93px -68px;
+        }
+				.footer_right ul li .p4{
+            background:url("../img/foot_enter_new2.png") no-repeat 0px -145px;
+        }
+				.footer_right ul li span{
+					color:#666;padding-left:10px;
+				}
+    </style>
+</head>
+<body>
+	<div id="footer">
+    <div class="my_footer">
+        <!-- 页脚左部 -->
+        <div class="footer_left">
+          <div class="serve">
+              <ul class="nav">
+                <li class="nav-item">客户服务</li>
+                <li class="nav-item">服务条款</li>
+                <li class="nav-item">隐私政策</li>
+                <li class="nav-item">版权投诉指引</li>
+                <li class="nav-item">意见反馈</li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p>
+                <span>网易公司版权所有©1997-2019  杭州乐读科技有限公司运营：</span>
+                <a href="#">浙网文[2018]3506-263号</a>
+              </p>
+            </div>
+            <div class="tip_phone">
+              <p>
+                <span>违法不良信息举报电话：0571-89853516  举报邮箱：</span>
+                <a href="#">ncm5990@163.com</a>
+              </p>
+            </div>
+						<!-- 页脚右部 -->
+						<div class="footer_right">
+							<ul>
+									<li>
+											<p class="p1"></p>
+											<span>用户认证</span>
+									</li>
+									<li>
+											<p class="p2"></p>
+											<span>独立音乐</span>
+									</li>
+									<li>
+											<p class="p3"></p>
+											<span>作品赞赏</span>
+									</li>
+									<li>
+											<p class="p4"></p>
+											<span>视屏奖励</span>
+									</li>
+							</ul>
+						</div>
+        </div>
+    </div>
+	</div>
+</body>
+</html>
