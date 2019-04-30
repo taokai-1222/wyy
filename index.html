@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易云音乐</title>
+		<link rel="shortcut icon" href="../img/favicon.ico">
+    <style>
+			*{margin:0;padding:0;}
+      .my_header,.my_footer{width:100%;}
+/*			轮播图样式*/
+      #container{background-color:#f5f5f5;}
+			.m_top{
+				width:1200px;height:336px;
+				margin:0 auto;
+			}
+			.m_top .m_top_nav{
+				position:relative;
+			}
+			.m_top .m_top_nav .my_img1{
+				position:absolute;
+				top:-43px;left:108px;
+			}
+			.m_top .m_top_nav .my_img2{
+				position:absolute;
+				top:-43px;left:838px;
+			}
+/*			热门推荐样式*/
+			.index{
+				width:992px;
+				margin:0 auto;
+				font-size:12px;
+				background-color:#fff;
+				border:1px solid #ccc;
+				display:flex;
+			}
+			.my_index{width:730px;border-right:1px solid #ccc;}
+			.index_top{width:730px;}
+			.nav{height:20px;margin-bottom:10px;
+				padding-top:15px;
+				}
+			.nav ul li,.nav h2,.nav p{
+				float:left;
+			}
+			.nav p{
+				width:20px;height:20px;
+				background: url("../img/index.png") no-repeat -232px -160px;
+				margin-left:30px;
+			}
+			.nav h2{margin-right:20px;}
+			.nav ul{list-style:none;}
+			.nav ul li,.nva a{
+				color:#666;	line-height:20px;
+			}
+			.nav-item + .nav-item::before{
+				content:"|";
+				padding-left:10px;
+				padding-right:10px;
+			}
+			hr{width:690px;height:2px;margin-left:20px;
+				background-color:#f00;border:0;
+				margin-bottom:20px;
+			}
+			.index_vip{
+				display:flex;
+				justify-content:space-around;
+				list-style:none;
+			}
+			.index_vip>li>div{
+				width:140px;height:200px;
+				font-size:16px;
+				margin-bottom:20px;
+			}
+			.index_vip>li>div>img:hover{
+				transform:scale(1.1);
+			}
+			.index_vip>li>div>a{
+				text-decoration:none;
+				color:#000;
+			}
+			.index_vip>li>div>a:hover{
+				text-decoration:underline;
+			}
+			.index_vip>li>div>p{
+				width:30px;height:18px;
+				background:url("../img/iconall.png") 10px -18px;
+				display:inline-block;
+			}
+			.list{
+				width:690px;height:470px;
+				border:1px solid #ccc;
+				display:flex;
+				justify-content:space-around;
+			}
+			.music_list{
+				width:230px;
+				border-right:1px solid #ccc;
+				background-color:#f4f4f4;
+			}
+			.music_list_title{
+				display:flex;
+				padding:20px;
+			}
+			.music_list_title>h3{
+				padding:10px;
+			}
+			.music_list>ul>li{
+				list-style-type:none;
+				padding-left:20px;
+			}
+			.music_list>p>a,.music_list>ul>li>a{
+				text-decoration:none;
+				color:#000;
+				font:14px "华文新魏";
+				line-height:32px;
+			}
+
+			.music_list>p{
+				padding-left:110px;
+				background-color:#e8e8e8;
+			}
+			.music_list>ul>li>span{
+				font:20px "华文行楷";
+			}
+			.music_list>ul>li:first-child span,.music_list>ul>li:nth-child(2) span,.music_list>ul>li:nth-child(3) span{
+				color:#f00;
+			}
+			.music_list>ul>li>a:hover{
+				text-decoration:underline;
+			}
+			.music_list>p>a:hover{
+				text-decoration:underline;
+			}
+			.music_list>ul>li:nth-child(odd){background-color:#e8e8e8}
+/*			侧边栏样式*/
+			.sidbar{width:260px;}
+			.singer{
+				padding:10px;
+				display:flex;
+				justify-content:space-between;
+			}
+			.singer>a{text-decoration:none;color:#666;}
+			.singer>a:hover{
+				text-decoration:underline;
+			}
+			.hr1{width:240px;margin-left:10px;
+				background-color:#bbb;}
+    </style>
+</head>
+<body>
+<header>
+    <iframe src="header.html" frameborder="0" scrolling="no"  class="my_header"></iframe>
+</header> 
+<div class="container">
+	<!-- 轮播图 -->
+	<div class="m_top">
+		<div class="m_top_nav">
+			<img class="my_img1" src="../img/6.png" alt="">
+			<img class="my_img2" src="../img/download.png" alt="">
+		</div>
+	</div>
+	<!-- 	热门推荐 -->
+	<div class="index">
+		<div class="my_index">
+			<div class="index_top">
+				<!--  第一行导航栏	 -->
+				<div class="nav">
+					<p></p>
+					<h2>热门推荐</h2>
+					<ul>
+						<li class="nav-item">华语</li>
+						<li class="nav-item">流行</li>
+						<li class="nav-item">摇滚</li>
+						<li class="nav-item">民谣</li>
+						<li class="nav-item">电子</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<ul class="index_vip">
+				<li>
+					<div class="my_music">
+						<img src="../img/AGA1.png" alt="">
+						<p></p>
+						<a href="#">一粒沙渗进浪漫恒河</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/Alan Walker2.png" alt="">
+						<p></p>
+						<a href="#">Alan Walker 电音触控灵魂</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/sia2.png" alt="">
+						<p></p>
+						<a href="#">【旋律控】超级好听的欧美良曲</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/dengziqi.png" alt="">
+						<p></p>
+						<a href="#">我多么希望，我心里的歌你能听到</a>
+					</div>
+				</li>	
+			</ul>
+			<ul class="index_vip">
+				<li>
+					<div class="my_music">
+						<img src="../img/liuzhijia.png" alt="">
+						<p></p>
+						<a href="#">周杰伦作曲，周播放量1800万</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/qifengl.png" alt="">
+						<p></p>
+						<a href="#">【起风了】火热网络歌曲</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/sunyusai.png" alt="">
+						<p></p>
+						<a href="#">中国第一支女子天团ChinaQueen</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/taoshiwu.png" alt="">
+						<p></p>
+						<a href="#">《青柠》人气歌曲，周播放量1200万</a>
+					</div>
+				</li>	
+			</ul>
+			<ul class="index_vip">
+				<li>
+					<div class="my_music">
+						<img src="../img/chenxuening.png" alt="">
+						<p></p>
+						<a href="#">实力唱将——陈雪凝【新歌推荐】</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/fengtimo.png" alt="">
+						<p></p>
+						<a href="#">网红一姐：冯提莫  经典翻唱</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/guocongming.png" alt="">
+						<p></p>
+						<a href="#">@抖音男神</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/juwenxian.png" alt="">
+						<p></p>
+						<a href="#">《BINGBIAN病变》女生版：鞠文娴</a>
+					</div>
+				</li>	
+			</ul>
+			<div class="index_top">
+				<!--  第二行导航栏	 -->
+				<div class="nav">
+					<p></p>
+					<h2>新碟上架</h2>
+				</div>
+			</div>
+			<hr>
+			<ul class="index_vip">
+				<li>
+					<div class="my_music">
+						<img src="../img/zhoubichang.png" alt="">
+						<p></p>
+						<a href="#">《最美的期待》周笔畅</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/xuezhiqian.png" alt="">
+						<p></p>
+						<a href="#">《动物世界》 薛之谦</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/yuhuan.png" alt="">
+						<p></p>
+						<a href="#">《烟火里的尘埃》 郁欢</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/zhangliangying.png" alt="">
+						<p></p>
+						<a href="#">《我的梦》 张靓颖</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="../img/zengxi.png" alt="">
+						<p></p>
+						<a href="#">《讲真的》 曾惜</a>
+					</div>
+				</li>
+			</ul>
+			<div class="index_top">
+			<!--  第三行导航栏	 -->
+				<div class="nav">
+					<p></p>
+					<h2>榜单</h2>
+				</div>
+			</div>
+			<hr>
+			<div class="list">
+				<div class="music_list">
+					<div class="music_list_title">
+						<img src="../img/biaoshenbang.png" alt="">
+						<h3>云音乐飙升榜</h3>
+					</div>	
+					<ul>
+						<li><span>1</span>&nbsp<a href="#">你的酒馆对我打了烊</a></li>
+						<li><span>2</span>&nbsp<a href="#">多想在平庸的生活拥有你</a></li>
+						<li><span>3</span>&nbsp<a href="#">liar</a></li>
+						<li><span>4</span>&nbsp<a href="#">莫得法</a></li>
+						<li><span>5</span>&nbsp<a href="#">最近(正式版)</a></li>
+						<li><span>6</span>&nbsp<a href="#">事关孤独</a></li>
+						<li><span>7</span>&nbsp<a href="#">离音</a></li>
+						<li><span>8</span>&nbsp<a href="#">Lonely Night</a></li>
+						<li><span>9</span>&nbsp<a href="#">soft sweets</a></li>
+						<li><span>10</span>&nbsp<a href="#">花落雨</a></li>
+					</ul>
+					<p><a href="#">查看全部></a></p>
+				</div>
+				<div class="music_list">
+					<div class="music_list_title">
+						<img src="../img/xingebang.png" alt="">
+						<h3>云音乐新歌榜</h3>
+					</div>	
+					<ul>
+						<li><span>1</span>&nbsp<a href="#">归去来兮</a></li>
+						<li><span>2</span>&nbsp<a href="#">大碗宽面</a></li>
+						<li><span>3</span>&nbsp<a href="#">我曾</a></li>
+						<li><span>4</span>&nbsp<a href="#">晚安</a></li>
+						<li><span>5</span>&nbsp<a href="#">你的姑娘</a></li>
+						<li><span>6</span>&nbsp<a href="#">最近 (正式版)</a></li>
+						<li><span>7</span>&nbsp<a href="#">游</a></li>
+						<li><span>8</span>&nbsp<a href="#">为时不晚</a></li>
+						<li><span>9</span>&nbsp<a href="#">只是太爱你</a></li>
+						<li><span>10</span>&nbsp<a href="#">元气夏天</a></li>
+					</ul>
+					<p><a href="#">查看全部></a></p>
+				</div>
+				<div class="music_list">
+					<div class="music_list_title">
+						<img src="../img/yuanchuang.png" alt="">
+						<h3>云音乐原创歌曲榜</h3>
+					</div>	
+					<ul>
+						<li><span>1</span>&nbsp<a href="#">晚安</a></li>
+						<li><span>2</span>&nbsp<a href="#">归去来兮</a></li>
+						<li><span>3</span>&nbsp<a href="#">Why we here</a></li>
+						<li><span>4</span>&nbsp<a href="#">锦中客</a></li>
+						<li><span>5</span>&nbsp<a href="#">这个与直觉相冲突的时代</a></li>
+						<li><span>6</span>&nbsp<a href="#">等你</a></li>
+						<li><span>7</span>&nbsp<a href="#">白裙子黑裙子</a></li>
+						<li><span>8</span>&nbsp<a href="#">伞</a></li>
+						<li><span>9</span>&nbsp<a href="#">失踪的朋友</a></li>
+						<li><span>10</span>&nbsp<a href="#">哦，及时行乐(正式版)</a></li>
+					</ul>
+					<p><a href="#">查看全部></a></p>
+				</div>
+			</div>
+		</div>
+		<!-- 侧边栏 -->
+		<div class="sidbar">
+			<div class="singer">
+				<h6>入驻歌手</h6>
+				<a href="#">查看全部></a>
+			</div>
+			<hr class="hr1">
+			
+		</div>
+	</div>
+</div>
+<footer>
+    <iframe src="footer.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+</footer>  
+</body>
+</html>
